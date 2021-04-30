@@ -16,6 +16,9 @@ this is algorithms sources I have studied.(나를 위한 코드 정리)
 
 ---
 
-### 참고 자료(books)
+#### 참고 자료(books)
 
 https://github.com/ndb796/python-for-coding-test
+
+#### 다음 풀어볼 코드 문제집
+https://github.com/tony9402/baekjoon
