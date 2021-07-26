@@ -1,3 +1,5 @@
+package TwoPointersPractice.baekjoon;
+
 import java.util.*;
 
 public class baekjoon_11728 {
