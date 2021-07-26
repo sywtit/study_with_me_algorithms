@@ -18,6 +18,7 @@ public class baekjoon_1065 {
 
         System.out.println(count);
 
+        sc.close();
     }
 
     static boolean check(int n) {
