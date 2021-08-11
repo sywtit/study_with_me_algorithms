@@ -37,11 +37,13 @@ public class baekjoon_5430 {
                     direction = (direction == true) ? false : true;
                 } else {
                     if (!direction) {
+                        // stack //rear -> rear
                         if (queue.pollLast() == null) {
                             check = false;
                             break;
                         }
                     } else {
+                        // queue //rear -> rear
                         if (queue.pollFirst() == null) {
                             check = false;
                             break;
