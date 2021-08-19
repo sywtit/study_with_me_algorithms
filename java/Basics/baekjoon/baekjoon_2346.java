@@ -7,6 +7,9 @@ public class baekjoon_2346 {
 
     public static void main(String[] args) throws Exception {
 
+       // 1) 방안 1: arr의 element를 바꿔주지 않음 --> 선택
+       // 2) 방안 2: arr의 element를 바꿔주고 rotate시킨다. --> arraydeque로 풀 수 있음
+
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(in.readLine());
 
@@ -22,7 +25,7 @@ public class baekjoon_2346 {
         }
 
         StringBuilder sb = new StringBuilder();
-        visited[0] = true;
+        //visited[0] = true;
 
         // 1번 풍선 먼저 터트림
         int pos = 1;
