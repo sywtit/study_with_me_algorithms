@@ -21,8 +21,8 @@ public class baekjoon_1256 {
             skip--;
             return;
         }
-        if (dp[x + y][y] <= skip) {
-            skip -= dp[x + y][y];
+        if (dp[x + y][x] <= skip) {
+            skip -= dp[x + y][x];
             return;
         }
         // a부터 순차적으로 체크
@@ -36,13 +36,14 @@ public class baekjoon_1256 {
 
     static void makeDp() {
         // 0개를 뽑을 때나 mCm의 경우 값이 0인 것을 이용
-        for (int i = 0; i <= 200; i++) {
+        for (int i = 0; i <= N + M; i++) {
             for (int j = 0; j <= i; j++) {
                 if (j == 0 || i == j) {
                     dp[i][j] = 1;
                     continue;
                 } else {
                     dp[i][j] = Math.min(1000000000, dp[i - 1][j - 1] + dp[i - 1][j]);
+                    // mCn = m-1Cn + m-1Cn-1
                 }
             }
         }
@@ -67,7 +68,7 @@ public class baekjoon_1256 {
         // 따라서 dp 방법을 이용한다.
         // 조합이 많이 나올 경우 : 그림을 먼저 그리고
         // mCn = m-1Cn + m-1Cn-1 특징을 이용한다!
-        dp = new int[201][201];
+        dp = new int[N + M + 1][N + M + 1];
 
         dp[0][0] = 1;
         makeDp();
