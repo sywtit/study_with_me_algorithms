@@ -3,7 +3,7 @@ package samsungSWProblems.baekjoon;
 import java.util.*;
 import java.io.*;
 
-public class Baekjoon_14888 {
+public class Main_14888 {
 
     static int N;
     static int[] numbers;
